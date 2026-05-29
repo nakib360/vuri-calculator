@@ -120,7 +120,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="absolute inset-0 bg-[#161616] border border-white/10 shadow-2xl overflow-hidden flex flex-col">
+      <div className="min-h-screen bg-[#161616] border border-white/10 shadow-2xl overflow-hidden flex flex-col">
 
         <div className="absolute top-0 left-0 w-full h-40  blur-3xl"></div>
 
@@ -214,9 +214,9 @@ const App = () => {
 
             </div>
           ) : (
-            <div className="flex items-start md:items-center justify-center h-full overflow-y-auto py-8 md:p-8">
+            <div className="flex justify-center py-8 md:p-8">
 
-              <div className="max-w-2xl w-full p-8 md:p-12">
+              <div className="max-w-2xl w-full p-8 md:p-12 pb-20">
 
                 <div className="my-5 flex items-center justify-center gap-3">
                   <img src={logo} alt="logo" />
