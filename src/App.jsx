@@ -263,8 +263,8 @@ const App = () => {
                   </p>
                 </div>
 
-                <p className="text-xs text-gray-500 text-center my-10 font-serif">
-                  <span>&lt;</span> build with nakib<span>/&gt;</span>
+                <p className="text-xs text-gray-500 text-center my-10">
+                  <span className="font-serif">&lt;</span> build with nakib<span className="font-serif">/&gt;</span>
                 </p>
               </div>
 
