@@ -119,8 +119,8 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black/60 p-5 md:p-10">
-      <div className="absolute inset-5 md:inset-10 rounded-[40px] bg-[#161616] border border-white/10 shadow-2xl overflow-hidden flex flex-col">
+    <div className="min-h-screen">
+      <div className="absolute inset-0 bg-[#161616] border border-white/10 shadow-2xl overflow-hidden flex flex-col">
 
         <div className="absolute top-0 left-0 w-full h-40  blur-3xl"></div>
 
