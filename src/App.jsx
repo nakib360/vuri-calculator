@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
 import { analyzeData } from "./utils/analyzeData";
+import logo from "../src/assets/logo.png"
 
 const App = () => {
   const [step, setStep] = useState(1);
@@ -126,8 +127,11 @@ const App = () => {
         {
           !showOverview ? (
             <div className="flex flex-col h-full transition-all duration-700 opacity-100 scale-100 blur-0">
-              <p className="text-white text-center text-2xl mt-3">ভুড়ি ক্যালকুলেটর</p>
-              <div className="relative z-10 p-8 md:p-16 pb-6 shrink-0 bg-[#161616]">
+              <div className="mt-5 flex items-center justify-center gap-3">
+                <img src={logo} alt="logo" />
+                <p className="text-white text-center text-2xl">খাদক মিটার</p>
+              </div>
+              <div className="relative z-10 p-8 pb-6 shrink-0 bg-[#161616]">
                 <div className="max-w-4xl mx-auto">
 
                   <div className="relative">
@@ -148,8 +152,8 @@ const App = () => {
                           <div key={item.key} className="flex flex-col items-center">
                             <div
                               className={`w-12 h-12 rounded-full flex items-center justify-center font-semibold text-sm border-2 transition-all duration-300 ${isActiveOrCompleted
-                                  ? "bg-gradient-to-br from-blue-500 to-cyan-400 border-transparent text-white shadow-lg shadow-blue-500/40 scale-110"
-                                  : "bg-[#222] border-white/10 text-gray-500"
+                                ? "bg-gradient-to-br from-blue-500 to-cyan-400 border-transparent text-white shadow-lg shadow-blue-500/40 scale-110"
+                                : "bg-[#222] border-white/10 text-gray-500"
                                 }`}
                             >
                               {completed ? <Check size={18} /> : item.id}
@@ -214,6 +218,10 @@ const App = () => {
 
               <div className="max-w-2xl w-full p-8 md:p-12">
 
+                <div className="my-5 flex items-center justify-center gap-3">
+                  <img src={logo} alt="logo" />
+                  <p className="text-white text-center text-2xl">খাদক মিটার</p>
+                </div>
                 <div className="text-center">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 break-words">
                     {result?.type}
